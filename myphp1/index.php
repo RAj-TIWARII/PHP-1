@@ -127,3 +127,23 @@ if ($worked_days == $full_work_days) {
     echo "The employee worked only $worked_days days. They are fired!";
 }
 ?>
+
+
+
+<?php
+// Student's marks
+$marks = 500; // Change this value to test different scenarios
+
+// Check the marks and assign a reward
+if ($marks == 500) {
+    $gifts = ["Laptop", "Smartphone", "Tablet", "Smartwatch"];
+    $reward = $gifts[array_rand($gifts)]; // Randomly select a gift
+    echo "Congratulations! You got full marks (500). Your reward is: $reward";
+} elseif ($marks >= 400) {
+    $girls = ["Teddy Bear", "Book", "Headphones", "Gift Card"];
+    $reward = $girls[array_rand($girls)]; // Randomly select a gift
+    echo "Great job! You scored 400 or more. Your reward is: $reward";
+} else {
+    echo "Keep working hard! No reward this time.";
+}
+?>
